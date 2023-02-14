@@ -1,0 +1,65 @@
+*setting box-border in html, other elements will inherit the value*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {   
+  }
+
+  body {
+    background-color:linen;
+
+  }
+  header { 
+    background-color: cornflowerblue;
+  }
+hr {                /*each norizontal rule is the same*/
+
+}
+  h1 {
+
+
+  }
+  
+  h2 {
+
+
+  }
+
+  h3 {
+
+
+  }
+  
+  a { /*text color of link*/
+    color: midnightblue;
+
+  }
+  
+  
+  a:link {    /*unvisited link*/
+ color: green;
+  }             
+  a:visited { /*visited link*/
+color: blueviolet; 
+  }            
+  a:hover {     /*on mouse over*/   
+color: greenyellow;
+  }      
+  a:active {      /*on click*/
+    color: darkgreen;
+  }
+  ul {             
+
+  }
+  li {            /*values for all list items*/
+
+  }
+  ol {
+
+  }
+  img {         /*properties for the images*/
+
+  }
+
+  /* technical requirements - include these css properties: background, color, font-family, font-size
+  height, margin, padding, text-align*/
