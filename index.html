@@ -1,34 +1,107 @@
-<!doctype html>
-<html>
+<!doctype <html> <!--This is the index (homepage) of a portfolio page assignment-->
 
-<head>
+<head> <!--necessary in head: meta, title, links to stylesheet(s), normalize css -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>CJWeaver-Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
     <link href="style.css" rel="stylesheet" type="text/css" />
+
 </head>
+<!--html body tag contains everything that will be view on the page-->
 
 <body>
-</div>
-<div class="header">
-
-    <div>
-        <img src="images\ofi01.png" width=150px height=130px alt="weaver logo image">
-    </div>
-    <div id="life">
-        <h2>Word-Weaver Designs</h2>
-    </div>
-        <main>
-            <article>
-
-            </article>
-        </main>
-        <footer>
-            <div>
-                <a 
+    <header> <!--h1 goes in the header, header is a semantic container that is used by search engines -->
+        <!-- div is a container to group elements with the class attribute, it will be used to manipulate elements with css.-->
+        <div class="header">
+            <img src="images\ofi01.png" width=150px height=130px alt="weaver logo image">
+            <h3>Word Weaver Designs</h3> <!--I created the "weaver" logo image using adobe illustrator -->
+            <h1>Cynthia J. Weaver</h1>
+            <h2>Software Developer</h2>
+        </div>
+    </header>
+    <main> <!-- below the header, main does not contain h1 or navigation elements-->
+        <article> <!--article contains the specific portfolio paragraphs and the headshot-->
+            <div class="row">
+                <!--attributes "row" and "column" (found on w3schools.com) used with css to make 2 side-by-side equal columns. -->
+                <div class="column"> <!--this method was the easiest for me to understand currently-->
+                    <h2>Hello and welcome to my portfolio page! <br>My name is Cynthia Weaver.</h2>
+                    <p>I am a former English Language Arts teacher who recently made the move
+                        from Lakeland, Florida to Asheville, North Carolina. I have a Bachelor of Arts in
+                        Music and English from The University of Alabama, and I am working towards a Master of Science
+                        degree in Learning Design and Technology in an online program at the University of South
+                        Florida. Currently, I am studying
+                        software development at Thinkful.</p>
+                </div>
+                <div class="column"> <!-- I did not make the portrait image responsive-->
+                    <img src="images\portrait.png" width="500" height="auto" alt="cweaver picture">
+                </div>
             </div>
-            
-        </footer>
+            <div>
+                <p>While I loved my previous career as a teacher, I realized that my passion lies
+                    in technology and its ability to positively impact the world. As a result, I made
+                    the decision to transition to a career in software development, and I am thoroughly
+                    enjoying my journey so far.</p>
+            </div>
+            <hr> <!--horizontal rule, used logically to divide parts of the article-->
+
+            <div>
+                <p> When I'm not busy coding, I enjoy exploring the great outdoors through hiking and backpacking.
+                    Living in Asheville, I am fortunate to have access to some of the most beautiful trails and
+                    scenery in the United States, and I make it a priority to get out and enjoy them as often as
+                    possible.</p>
+                <p>Thank you for taking the time to learn a little bit about me. If you have any questions or are
+                    interested in working together, please don't hesitate to reach out!</p>
+
+            </div>
+        </article> <!-- article ends before the hiking photos and links--not sure if this is correct-->
+
+        <div class="row">
+            <div class="column">
+                <img src="images\myphoto.jpg" width=max height=auto alt="person outdoors wearing cap">
+            </div>
+            <div class="column">
+                <div class="hiking">
+                    <!-- the "hiking" attribute value here is used with css to style this div's content-->
+                    <ol><!--this ordered list, maybe out of place on a portfolio page, was added to fulfill the "ol" requirement for the assignment -->
+                        <h3>Favorite places for day hikes</h3>
+                        <!--target=blank and rel=noopener--to open link in a new page -->
+                        <li><a href="https://ashevilletrails.com/asheville-hiking-favorite-top-ten-trails/"
+                                target="_blank" rel="noopener">
+                                Trails near Asheville, North</a></li>
+                        <li><a href="https://www.alltrails.com/us/georgia" target="_blank" rel="noopener">
+                                Georgia Appalachian Trail Dayhikes</a></li>
+                        <li><a href="https://floridahikes.com/book/50-hikes-in-central-florida" target="_blank"
+                                rel="noopener">Hiking Trails in Florida</a>
+
+                        </li>
+                    </ol>
+                </div>
+                <figure> <!-- I like the figure and figcaption option.-->
+                    <img src="images/bloodMountainPanorama_resize2.jpg" width="75%"
+                        alt="view from the summit of Blood Mountain on the Appalachian Trail">
+                    <figcaption>View from the summit of Blood Mountain, Georgia, AT</figcaption>
+                </figure>
+
+            </div>
+        </div>
+
+    </main>
+    <hr><!--not sure whether this "hr" element should be place before or after "main" or used here at all-->
+    <footer><!--added contact info in the footer using an unordered list-->
+        <ul>
+            <h3>Contact me for more information.</h3>
+            <li><a href="https://linkedin.com/in/cynthia-j-weaver" target="_blank" rel="noopener">LinkedIn
+                    Profile</a></li>
+            <li><a href="https://github.com/CynthiaJWeaver" target="_blank">Github Profile</a></li>
+            <li><a href="mailto:jeannineweaver@gmail.com?subject=Mail from our Website">Email</a></li>
+            <!--used the mailto link, but I'm not sure that I like this option -->
+        </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
+<!--HTML elements required for assignment: doctype, html, head, body, meta, title, 
+    h1, h2, h3, p, link ul, ol, img, hr-->
