@@ -95,12 +95,12 @@ hr {
   position: center;
  
 }
-.column h2{
-  position: relative;
+/*.column h2{
+  position: relative; 
 }
+/* I found this to be unnecessary after I made a few changesy*/
 
-
-
+/*styling all of the links */
 a {
   /*text color of link*/
   color: rgb(34, 34, 221);
@@ -126,9 +126,9 @@ a:hover {
 a:active {
   /*on click*/
   color: rgb(6, 185, 6);
-}
+}/* none is used in the unordered list to remove the bullet points*/
 
-ul {
+ul { 
   list-style: none;
 
  
@@ -145,24 +145,19 @@ ol {
   font-style: oblique
 }
 ol li{
-  margin-left: 10px;
+  margin-left: 10px;/* I made this adjustmet to more closely align title element and the list elements
+  there is probably a much better way*/
 }
-  .row .column .hiking {
+  .row .column .hiking { /* nesting*/
 max-width: 75%;
 }
-.footer div h4{
-  margin-left: 70%;
-  margin-top: 0;
-  font-weight: lighter;
-  font-style: oblique;
-  color: midnightblue;
-}
- 
-.footer {
-  background-color: rgb(191, 202, 226);
-}
 
-/* Clear floats after the columns */
+ 
+/*footer {
+  background-color: rgb(191, 202, 226);
+} decided that the footer looks better with the same color as the page when "hr" is added*/
+
+/* Clear floats after the columns, information and understanding of this comes from w3schools*/
 .row:after {
   content: "";
   display: table;
