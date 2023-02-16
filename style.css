@@ -55,17 +55,20 @@ header { /*properties used and adjusted to control the way the  header displays 
   margin-top: 0%;
   font-weight: lighter;
 }
- h3{/* used for list titles and word weaver logo text */
+ .header h3{/* used for list titles and word weaver logo text */
   font-size: 1.5em;
   font-style:oblique; 
 margin-bottom: 0%; /* the bottom margin property did not make a difference in the h3 in the hearder,
 it was needed to bring the list titles closer to the list items-- */ 
 }
+
  h2{
   font-size: 1.5em; /* smaller font size than the h3 in the header for the list titles */
-
 }
-
+h3 {
+  font-size: 1.5em
+  ;
+}
 p {
 font-size: 1.5em; /* this may be somewhat larger than normal for paragraph texts*/
 }
@@ -77,7 +80,7 @@ hr {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-/* Create two equal columns that floats next to each other */
+/* Create two equal columns that float next to each other */
 .column {
 
   float: left;
@@ -92,11 +95,8 @@ hr {
  
   height: auto;
  
-  position: center;
+  
  
-}
-.column h2{
-  position: relative; 
 }
 
 
