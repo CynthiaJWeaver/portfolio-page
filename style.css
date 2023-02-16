@@ -1,65 +1,173 @@
-*setting box-border in html, other elements will inherit the value*/
-html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {   
-  }
+/*setting box-borderfor all*/ 
+*{
+  box-sizing: border-box;
+  
+}
 
-  body {
-    background-color:linen;
+html /*set font color and family for entire html, unless otherwise specified */
+{
 
-  }
-  header { 
-    background-color: cornflowerblue;
-  }
-hr {                /*each norizontal rule is the same*/
+color: midnightblue;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
-  h1 {
-
-
-  }
+/*set background color and width/height. vh is used to fill up the viewport's height
+ (still working to fully understand the width/height concepts) */
+body {
+  background-color:  papayawhip;
+  width: 100%;
+  min-height: 100vh;
   
-  h2 {
+}
 
-
-  }
-
-  h3 {
-
-
-  }
+header { /*properties used and adjusted to control the way the  header displays */
   
-  a { /*text color of link*/
-    color: midnightblue;
-
+    background-color: rgb(191, 202, 226);
+    color: rgb(38, 34, 85);
+    padding: -px;
+    border-bottom-color: rgb(38, 34, 85);
+    max-height: 300px;
+    overflow: hidden; 
+    border-bottom: solid;
   }
+
+ 
+  .header img { /*this controls how the logo in the header is displayed. This one took several adjustments */
+    float: left;
+    padding-left: 15px;
+    margin-bottom: 3px;
+    /*position: relative; not needed*/
+    height: 100px;
+   width: auto;
+  }
+ 
+  h1 { /*position-relative used to display the name and the logo in the header --grasping this concepts is still a work in progress */
+    /*position: relative; after all, I did not need this property, but I left it in because I need more understanding*/ 
+    margin-bottom: -1px;   /*margin-bottom is used to bring display h1 close to the h2 subtitle */
+    font-size: 4em;
+    text-align: center; /*centering the text */
+  }
+ 
+.header h2{
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+  margin-top: 0%;
+  font-weight: lighter;
+}
+ h3{
+  font-size: 1.5em;
+  font-style:oblique;
+margin-bottom: 0%;
+
+}
+ h2{
+  font-size: 1.5em;
+
+}
+
+p {
+font-size: 1.5em;
+}
+
+hr {
+  /*horizontal rule--learned how to do this from an article at css-tricks.com*/
+  border: 10px;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+
+  float: left;
+  width: 50%;
+  padding: 10px;
+
+}
+
+
+
+.column img{
+ 
+  height: auto;
+ 
+  position: center;
+ 
+}
+.column h2{
+  position: relative;
+}
+
+
+
+a {
+  /*text color of link*/
+  color: rgb(34, 34, 221);
+
+}
+
+
+a:link {
+  /*unvisited link*/
+  color: rgb(42, 42, 184);
+}
+
+a:visited {
+  /*visited link*/
+  color: rgb(25, 2, 46);
+}
+
+a:hover {
+  /*on mouse over*/
+  color: rgb(193, 214, 255);
+}
+
+a:active {
+  /*on click*/
+  color: rgb(6, 185, 6);
+}
+
+ul {
+  list-style: none;
+
+ 
+}
+
+li {/*values for all list items*/
+  margin-top:5px;
+  font-style:oblique;
   
-  
-  a:link {    /*unvisited link*/
- color: green;
-  }             
-  a:visited { /*visited link*/
-color: blueviolet; 
-  }            
-  a:hover {     /*on mouse over*/   
-color: greenyellow;
-  }      
-  a:active {      /*on click*/
-    color: darkgreen;
-  }
-  ul {             
 
-  }
-  li {            /*values for all list items*/
+}
 
-  }
-  ol {
+ol {
+  font-style: oblique
+}
+ol li{
+  margin-left: 10px;
+}
+  .row .column .hiking {
+max-width: 75%;
+}
+.footer div h4{
+  margin-left: 70%;
+  margin-top: 0;
+  font-weight: lighter;
+  font-style: oblique;
+  color: midnightblue;
+}
+ 
+.footer {
+  background-color: rgb(191, 202, 226);
+}
 
-  }
-  img {         /*properties for the images*/
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  }
-
-  /* technical requirements - include these css properties: background, color, font-family, font-size
+/* technical requirements - include these css properties: background, color, font-family, font-size
   height, margin, padding, text-align*/
