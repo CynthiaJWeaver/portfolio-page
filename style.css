@@ -48,26 +48,26 @@ header { /*properties used and adjusted to control the way the  header displays 
     text-align: center; /*centering the text */
   }
  
-.header h2{
+.header h2{/* the sub heading, top margin set to 0 to bring it close to the name--h1*/
   text-align: center;
   font-style: italic;
   font-size: 2em;
   margin-top: 0%;
   font-weight: lighter;
 }
- h3{
+ h3{/* used for list titles and word weaver logo text */
   font-size: 1.5em;
-  font-style:oblique;
-margin-bottom: 0%;
-
+  font-style:oblique; 
+margin-bottom: 0%; /* the bottom margin property did not make a difference in the h3 in the hearder,
+it was needed to bring the list titles closer to the list items-- */ 
 }
  h2{
-  font-size: 1.5em;
+  font-size: 1.5em; /* smaller font size than the h3 in the header for the list titles */
 
 }
 
 p {
-font-size: 1.5em;
+font-size: 1.5em; /* this may be somewhat larger than normal for paragraph texts*/
 }
 
 hr {
